@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.j_jan.myapplication.MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/textViewJournal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Journal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.762" />
+
+    <Button
+        android:id="@+id/buttonSend"
+        android:layout_width="148dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="228dp"
+        android:text="Send message"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonConnect"
+        android:layout_width="120dp"
+        android:layout_height="39dp"
+        android:text="Connect"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/buttonDisconnect"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:text="Disconnect"
+        app:layout_constraintBottom_toTopOf="@+id/editTextMessage"
+        app:layout_constraintTop_toBottomOf="@+id/buttonConnect"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/textViewstatus"
+        android:layout_width="255dp"
+        android:layout_height="66dp"
+        android:text="Status: Waiting..."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.958"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="8dp" />
+
+    <EditText
+        android:id="@+id/editTextMessage"
+        android:layout_width="374dp"
+        android:layout_height="142dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:text="testing 123"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSend"
+        app:layout_constraintTop_toBottomOf="@+id/textViewstatus"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="5dp" />
+
+
+</android.support.constraint.ConstraintLayout>
